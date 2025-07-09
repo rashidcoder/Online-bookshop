@@ -15,19 +15,25 @@ import UserAction from "./Pages/UserAction";
 
 function App() {
   return (
-    <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} /> 
-        <Route path="/user-action" element={<UserAction />}>
-          <Route path="profile" element={<Profile />} />
-          <Route path="carted" element={<Carted />} />
-          <Route path="liked" element={<Liked />} />
-        </Route>
-      </Routes>
-      <Footer />
-    </Router>
+    <>
+      <div className="test-banner">
+        Site now<span className="highlight">Test mode</span>
+      </div>
+
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} /> 
+          <Route path="/user-action" element={<UserAction />}>
+            <Route path="profile" element={<Profile />} />
+            <Route path="carted" element={<Carted />} />
+            <Route path="liked" element={<Liked />} />
+          </Route>
+        </Routes>
+        <Footer />
+      </Router>
+    </>
   );
 }
 
