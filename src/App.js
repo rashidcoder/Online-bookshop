@@ -17,7 +17,7 @@ function App() {
   return (
     <>
       <div className="test-banner">
-        Site now<span className="highlight">Test mode</span>
+        Site now <span className="highlight">Test mode</span>
       </div>
 
       <Router>
